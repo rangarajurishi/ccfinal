@@ -1,0 +1,6 @@
+Flask~=1.1
+pandas~=1.2.3
+mysql-connector~=2.2.9
+flask-session~=0.3.1
+flask-talisman~=0.7.0
+pymssql~=2.2.2

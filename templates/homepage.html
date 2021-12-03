@@ -1,9 +1,9 @@
 <!-- Store this code in 'login.html' file inside the 'templates' folder -->
 
-<html> 
-	<head> 
-		<meta charset="UTF-8"> 
-		<title> Login </title> 
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Login </title>
 		<style>
             body {font-family: Arial, Helvetica, sans-serif;}
             form {border: 3px solid #f1f1f1;
@@ -24,7 +24,7 @@
             }
 
             .btn {
-            background-color: #4CAF50;
+            background-color: #800000;
             color: white;
             margin: 8px 0;
             cursor: pointer;
@@ -42,20 +42,62 @@
             float: right;
             padding-top: 16px;
             }
-        </style>		 
-	</head> 
-	<body></br></br></br></br></br> 
-		<div align="center" class="container"> 
+
+
+								.center {
+									margin: auto;
+									width: 60%;
+									border: 3px solid #FF5733;
+									padding: 30px;
+									text-align: center;
+									  padding: 16px;
+										background-color: #87ceeb;
+				            color: white;
+				            cursor: pointer;
+				            padding: 14px 20px;
+				            border: none;
+				            width: 90%;
+								}
+
+							h4{
+								color: black;
+								font-size: 25px;
+							}
+
+							h2{
+	          font-size: 30px;
+
+							}
+
+
+
+        </style>
+	</head>
+	<body></br></br></br></br></br>
+
+		<div class="center">
+		    <h2> Creating Retail Web Application using Azure Cloud Technologies and Tools</h2>
+		    <br/>
+		    <h4> Team: AKATSUKI </h4>
+		    <h4>Team Members</h4>
+		    <h3>Rishi Teja Rangaraju (LEAD)</h3>
+		    <h3>Sri Harsha Nagpurkar</h3>
+		    <h3>Nipun Penti</h3>
+		    <br/>
+		    <br/>
+			</div>
+
+		<div align="center" class="container">
             <h2>Login</h2>
-				<form action="{{ url_for('homepage') }}" method="post"> 
+				<form action="{{ url_for('homepage') }}" method="post">
                     <div class="msg">{{ msg }}</div>
                     <label><b>Username</b> </label>
-					<input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox" required/></br></br> 
+					<input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox" required/></br></br>
 					<label><b>Password </b></label>
-                    <input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox" required/></br></br></br> 
+                    <input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox" required/></br></br></br>
 					<input type="submit" class="btn" value="Sign In"></br></br>
-                    <p class="bottom">Don't have an account?  <a class="bottom" href="{{ url_for('register')}}"> Register Here</a></p> 
-				</form> 
-		</div> 
-	</body> 
-</html> 
+                    <p class="bottom">Don't have an account?  <a class="bottom" href="{{ url_for('register')}}"> Register Here</a></p>
+				</form>
+		</div>
+	</body>
+</html>
